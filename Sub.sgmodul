@@ -1,4 +1,4 @@
-#!name=Sub-Store
+#!name=Sub-Store 订阅转换
 #!desc=https://sub-store.vercel.app
 [MITM]
 hostname=%APPEND% sub.store
