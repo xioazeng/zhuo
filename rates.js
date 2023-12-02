@@ -29,7 +29,7 @@ $httpClient.get(url, function(error, response, data) {
 🇹🇷1CNY     ${tryToCny}里拉₺
 🇭🇰1CNY     ${cnyToHkd}港币HK$
 🇪🇬1CNY     ${cnyToEgp}埃及镑£
-🇭🇰1CNY     ${cnyToNgn}奈拉₦
+🇳🇬1CNY     ${cnyToNgn}奈拉₦
 🇵🇭1CNY     ${cnyToPhp}比索₱
 🇯🇵1CNY     ${cnyToJpy}日元
 🇰🇷1CNY     ${cnyToKrw}韩元
