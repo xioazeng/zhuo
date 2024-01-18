@@ -15,6 +15,7 @@ $httpClient.get(url, function(error, response, data) {
   const cnyToNgn = rates.NGN.toFixed(2);
   const cnyToPhp = rates.PHP.toFixed(2);
   const cnyToJpy = rates.JPY.toFixed(2);
+  const cnyToNtd = rates.NTD.toFixed(2);
   const cnyToKrw = rates.KRW.toFixed(2);
   const timestamp = new Date().toLocaleTimeString("en-US", {
     hour: "2-digit",
@@ -31,8 +32,9 @@ $httpClient.get(url, function(error, response, data) {
 🇪🇬1CNY     ${cnyToEgp}埃及镑£
 🇳🇬1CNY     ${cnyToNgn}奈拉₦
 🇵🇭1CNY     ${cnyToPhp}比索₱
-🇯🇵1CNY     ${cnyToJpy}日元
-🇰🇷1CNY     ${cnyToKrw}韩元
+🇯🇵1CNY     ${cnyToJpy}日元￥
+🇨🇳1CNY     ${cnyToJpy}新台币NT$
+🇰🇷1CNY     ${cnyToKrw}韩元₩
   `;
 
   const panel = {
