@@ -465,7 +465,7 @@ proxy-groups:
       - 🇺🇸 United States 07
       - 🇺🇸 United States 08
       - 🇺🇸 United States | 家宽 3.0x
-  - name: TW
+- name: TW
     type: select
     proxies:
       - 🇨🇳 Taiwan 01
