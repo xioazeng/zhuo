@@ -168,127 +168,66 @@ dns:
     - +.media.dssott.com
     - +.pvp.net
 proxies:
-  - name: "Traffic: 2.92 GB | 20 GB"
-    server: gzdata1.fc-sigma.xyz
-    port: 10001
-    type: ss
-    cipher: aes-128-gcm
-    password: Sj10bnYDe7w6V29E
-    plugin: obfs
-    plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}
-    udp: true
-  - name: "Expire: 2024-09-24"
-    server: gzdata1.fc-sigma.xyz
-    port: 10001
-    type: ss
-    cipher: aes-128-gcm
-    password: Sj10bnYDe7w6V29E
-    plugin: obfs
-    plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}
-    udp: true
-  - name: 🇭🇰 香港实验性 IEPL 中继 1
-    server: gzdata1.fc-sigma.xyz
-    port: 10001
-    type: ss
-    cipher: aes-128-gcm
-    password: Sj10bnYDe7w6V29E
-    plugin: obfs
-    plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}
-    udp: true
-  - name: 🇯🇵 日本实验性 IEPL 中继 1
-    server: shdata1.fc-sigma.xyz
-    port: 10002
-    type: ss
-    cipher: aes-128-gcm
-    password: Sj10bnYDe7w6V29E
-    plugin: obfs
-    plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}
-    udp: true
-  - {name: 🇸🇬 新加坡实验性 IEPL 中继 1, server: gzdata1.fc-sigma.xyz, port: 10003, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇺🇸 美国实验性 IEPL 中继 1, server: shdata1.fc-sigma.xyz, port: 10004, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇭🇰 香港高级 IEPL 中继 1, server: gzdata1.fc-sigma.xyz, port: 12001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇭🇰 香港高级 IEPL 中继 2, server: gzdata1.fc-sigma.xyz, port: 12002, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇭🇰 香港高级 IEPL 中继 3, server: gzdata1.fc-sigma.xyz, port: 12003, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇯🇵 日本高级 IEPL 中继 1, server: shdata1.fc-sigma.xyz, port: 12011, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇯🇵 日本高级 IEPL 中继 2, server: shdata1.fc-sigma.xyz, port: 12012, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇯🇵 日本高级 IEPL 中继 3, server: shdata1.fc-sigma.xyz, port: 12013, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇸🇬 新加坡高级 IEPL 中继 1, server: gzdata1.fc-sigma.xyz, port: 12031, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇸🇬 新加坡高级 IEPL 中继 2, server: gzdata1.fc-sigma.xyz, port: 12032, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇸🇬 新加坡高级 IEPL 中继 3, server: gzdata1.fc-sigma.xyz, port: 12033, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇨🇳 台湾高级 IEPL 中继 1, server: gzdata1.fc-sigma.xyz, port: 12041, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇨🇳 台湾高级 IEPL 中继 2, server: gzdata1.fc-sigma.xyz, port: 12042, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇨🇳 台湾高级 IEPL 中继 3, server: gzdata1.fc-sigma.xyz, port: 12043, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇺🇸 美国高级 IEPL 中继 1, server: shdata1.fc-sigma.xyz, port: 12021, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇺🇸 美国高级 IEPL 中继 2, server: shdata1.fc-sigma.xyz, port: 12022, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇺🇸 美国高级 IEPL 中继 3, server: shdata1.fc-sigma.xyz, port: 12023, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇭🇰 香港标准 IEPL 中继 1, server: gzdata1.fc-sigma.xyz, port: 11001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇭🇰 香港标准 IEPL 中继 2, server: gzdata1.fc-sigma.xyz, port: 11002, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇭🇰 香港标准 IEPL 中继 3, server: gzdata1.fc-sigma.xyz, port: 11003, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇭🇰 香港标准 IEPL 中继 4, server: gzdata1.fc-sigma.xyz, port: 11004, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇭🇰 香港标准 IEPL 中继 5, server: gzdata1.fc-sigma.xyz, port: 11005, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇭🇰 香港标准 IEPL 中继 6, server: gzdata1.fc-sigma.xyz, port: 11006, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇭🇰 香港标准 IEPL 中继 7, server: gzdata1.fc-sigma.xyz, port: 11007, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇭🇰 香港标准 IEPL 中继 8, server: gzdata1.fc-sigma.xyz, port: 11008, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇯🇵 日本标准 IEPL 中继 1, server: shdata1.fc-sigma.xyz, port: 11011, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇯🇵 日本标准 IEPL 中继 2, server: shdata1.fc-sigma.xyz, port: 11012, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇯🇵 日本标准 IEPL 中继 3, server: shdata1.fc-sigma.xyz, port: 11013, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇯🇵 日本标准 IEPL 中继 4, server: shdata1.fc-sigma.xyz, port: 11014, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇯🇵 日本标准 IEPL 中继 5, server: shdata1.fc-sigma.xyz, port: 11015, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇯🇵 日本标准 IEPL 中继 6, server: shdata1.fc-sigma.xyz, port: 11016, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇯🇵 日本标准 IEPL 中继 7, server: shdata1.fc-sigma.xyz, port: 11017, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇯🇵 日本标准 IEPL 中继 8, server: shdata1.fc-sigma.xyz, port: 11018, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇸🇬 新加坡标准 IEPL 中继 1, server: gzdata1.fc-sigma.xyz, port: 11031, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇸🇬 新加坡标准 IEPL 中继 2, server: gzdata1.fc-sigma.xyz, port: 11032, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇸🇬 新加坡标准 IEPL 中继 3, server: gzdata1.fc-sigma.xyz, port: 11033, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇸🇬 新加坡标准 IEPL 中继 4, server: gzdata1.fc-sigma.xyz, port: 11034, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇸🇬 新加坡标准 IEPL 中继 5, server: gzdata1.fc-sigma.xyz, port: 11035, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇸🇬 新加坡标准 IEPL 中继 6, server: gzdata1.fc-sigma.xyz, port: 11036, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇸🇬 新加坡标准 IEPL 中继 7, server: gzdata1.fc-sigma.xyz, port: 11037, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇸🇬 新加坡标准 IEPL 中继 8, server: gzdata1.fc-sigma.xyz, port: 11038, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇨🇳 台湾标准 IEPL 中继 1, server: gzdata1.fc-sigma.xyz, port: 11041, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇨🇳 台湾标准 IEPL 中继 2, server: gzdata1.fc-sigma.xyz, port: 11042, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇨🇳 台湾标准 IEPL 中继 3, server: gzdata1.fc-sigma.xyz, port: 11043, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇺🇸 美国标准 IEPL 中继 1, server: shdata1.fc-sigma.xyz, port: 11021, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇺🇸 美国标准 IEPL 中继 2, server: shdata1.fc-sigma.xyz, port: 11022, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇺🇸 美国标准 IEPL 中继 3, server: shdata1.fc-sigma.xyz, port: 11023, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇺🇸 美国标准 IEPL 中继 4, server: shdata1.fc-sigma.xyz, port: 11024, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇺🇸 美国标准 IEPL 中继 5, server: shdata1.fc-sigma.xyz, port: 11025, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇺🇸 美国标准 IEPL 中继 6, server: shdata1.fc-sigma.xyz, port: 11026, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇺🇸 美国标准 IEPL 中继 7, server: shdata1.fc-sigma.xyz, port: 11027, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇺🇸 美国标准 IEPL 中继 8, server: shdata1.fc-sigma.xyz, port: 11028, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇲🇩 摩尔多瓦标准 IEPL 中继 1, server: bjdata1.fc-sigma.xyz, port: 11050, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇺🇦 乌克兰标准 IEPL 中继 1, server: bjdata1.fc-sigma.xyz, port: 11051, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇮🇹 意大利标准 IEPL 中继 1, server: bjdata1.fc-sigma.xyz, port: 11052, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇭🇺 匈牙利标准 IEPL 中继 1, server: bjdata1.fc-sigma.xyz, port: 11053, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇪🇸 西班牙标准 IEPL 中继 1, server: bjdata1.fc-sigma.xyz, port: 11054, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇹🇷 土耳其标准 IEPL 中继 1, server: bjdata1.fc-sigma.xyz, port: 11055, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇩🇪 德国标准 IEPL 中继 1, server: bjdata1.fc-sigma.xyz, port: 11056, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇩🇪 德国标准 IEPL 中继 2, server: bjdata1.fc-sigma.xyz, port: 11057, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇬🇧 英国标准 IEPL 中继 1, server: bjdata1.fc-sigma.xyz, port: 11058, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇬🇧 英国标准 IEPL 中继 2, server: bjdata1.fc-sigma.xyz, port: 11059, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇳🇱 荷兰标准 IEPL 中继 1, server: bjdata1.fc-sigma.xyz, port: 11060, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇳🇱 荷兰标准 IEPL 中继 2, server: bjdata1.fc-sigma.xyz, port: 11061, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇫🇷 法国标准 IEPL 中继 1, server: bjdata1.fc-sigma.xyz, port: 11062, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇫🇷 法国标准 IEPL 中继 2, server: bjdata1.fc-sigma.xyz, port: 11063, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇨🇦 加拿大标准 IEPL 中继 1, server: shdata1.fc-sigma.xyz, port: 11064, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇨🇦 加拿大标准 IEPL 中继 2, server: shdata1.fc-sigma.xyz, port: 11065, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇦🇷 阿根廷标准 IEPL 中继 1, server: shdata1.fc-sigma.xyz, port: 11066, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇧🇷 巴西标准 IEPL 中继 1, server: shdata1.fc-sigma.xyz, port: 11067, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇨🇱 智利标准 IEPL 中继 1, server: shdata1.fc-sigma.xyz, port: 11068, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇦🇺 澳大利亚标准 IEPL 中继 1, server: gzdata1.fc-sigma.xyz, port: 11069, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇳🇿 新西兰标准 IEPL 中继 1, server: gzdata1.fc-sigma.xyz, port: 11070, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇰🇷 韩国标准 IEPL 中继 1, server: shdata1.fc-sigma.xyz, port: 11071, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇰🇷 韩国标准 IEPL 中继 2, server: shdata1.fc-sigma.xyz, port: 11072, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇮🇩 印尼标准 IEPL 中继 1, server: gzdata1.fc-sigma.xyz, port: 11073, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇹🇭 泰国标准 IEPL 中继 1, server: gzdata1.fc-sigma.xyz, port: 11074, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇻🇳 越南标准 IEPL 中继 1, server: gzdata1.fc-sigma.xyz, port: 11075, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇮🇳 印度标准 IEPL 中继 1, server: gzdata1.fc-sigma.xyz, port: 11080, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇵🇰 巴基斯坦标准 IEPL 中继 1, server: gzdata1.fc-sigma.xyz, port: 11081, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇮🇱 以色列标准 IEPL 中继 1, server: bjdata1.fc-sigma.xyz, port: 11082, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇦🇪 阿联酋标准 IEPL 中继 1, server: gzdata1.fc-sigma.xyz, port: 11083, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇵🇭 菲律宾标准 IEPL 中继 1, server: gzdata1.fc-sigma.xyz, port: 11084, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇲🇾 马来西亚标准 IEPL 中继 1, server: gzdata1.fc-sigma.xyz, port: 11085, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
-  - {name: 🇪🇬 埃及标准 IEPL 中继 1, server: bjdata1.fc-sigma.xyz, port: 11086, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 091c00a2d3.oss-cn-hangzhou.aliyuncs.com}, udp: true}
+    - { name: '剩余流量：182.35 GB', type: ss, server: tjsedht.cfprefer1.xyz, port: 45611, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '距离下次重置剩余：20 天', type: ss, server: tjsedht.cfprefer1.xyz, port: 45611, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: 套餐到期：2024-06-07, type: ss, server: tjsedht.cfprefer1.xyz, port: 45611, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇭🇰 Hong Kong 01', type: ss, server: tjsedht.cfprefer1.xyz, port: 45611, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇭🇰 Hong Kong 02', type: ss, server: tjsedht.cfprefer1.xyz, port: 14149, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇭🇰 Hong Kong 03', type: ss, server: tjsedht.cfprefer1.xyz, port: 10000, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇭🇰 Hong Kong 04', type: ss, server: tjsedht.cfprefer1.xyz, port: 10001, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇭🇰 Hong Kong 05', type: ss, server: tjsedht.cfprefer1.xyz, port: 10015, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇭🇰 Hong Kong 06', type: ss, server: tjsedht.cfprefer1.xyz, port: 10016, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇭🇰 Hong Kong 07', type: ss, server: tjsedht.cfprefer1.xyz, port: 10017, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇭🇰 Hong Kong 08', type: ss, server: tjsedht.cfprefer1.xyz, port: 10018, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇭🇰 Hong Kong | 日用 0.2x', type: ss, server: tjsedht.cfprefer1.xyz, port: 10067, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇯🇵 Japan 01', type: ss, server: tjsedht.cfprefer1.xyz, port: 19563, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇯🇵 Japan 02', type: ss, server: tjsedht.cfprefer1.xyz, port: 43641, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇯🇵 Japan 03', type: ss, server: tjsedht.cfprefer1.xyz, port: 28436, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇯🇵 Japan 04', type: ss, server: tjsedht.cfprefer1.xyz, port: 12994, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇯🇵 Japan 05', type: ss, server: tjsedht.cfprefer1.xyz, port: 10019, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇯🇵 Japan 06', type: ss, server: tjsedht.cfprefer1.xyz, port: 10020, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇯🇵 Japan 07', type: ss, server: tjsedht.cfprefer1.xyz, port: 10021, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇯🇵 Japan 08', type: ss, server: tjsedht.cfprefer1.xyz, port: 10022, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇯🇵 Japan | 日用 0.2x', type: ss, server: tjsedht.cfprefer1.xyz, port: 10036, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇸🇬 Singapore 01', type: ss, server: tjsedht.cfprefer1.xyz, port: 14337, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇸🇬 Singapore 02', type: ss, server: tjsedht.cfprefer1.xyz, port: 43934, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇸🇬 Singapore 03', type: ss, server: tjsedht.cfprefer1.xyz, port: 10002, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇸🇬 Singapore 04', type: ss, server: tjsedht.cfprefer1.xyz, port: 10003, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇸🇬 Singapore 05', type: ss, server: tjsedht.cfprefer1.xyz, port: 10032, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇸🇬 Singapore 06', type: ss, server: tjsedht.cfprefer1.xyz, port: 10033, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇸🇬 Singapore 07', type: ss, server: tjsedht.cfprefer1.xyz, port: 10034, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇸🇬 Singapore 08', type: ss, server: tjsedht.cfprefer1.xyz, port: 10035, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇸🇬 Singapore | 日用 0.2x', type: ss, server: tjsedht.cfprefer1.xyz, port: 10010, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇸🇬 Singapore | 劫持', type: ss, server: tjsedht.cfprefer1.xyz, port: 10055, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇨🇳 Taiwan 01', type: ss, server: tjsedht.cfprefer1.xyz, port: 50937, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇺🇸 United States 01', type: ss, server: tjsedht.cfprefer1.xyz, port: 25818, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇺🇸 United States 02', type: ss, server: tjsedht.cfprefer1.xyz, port: 28287, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇺🇸 United States 03', type: ss, server: tjsedht.cfprefer1.xyz, port: 10038, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇺🇸 United States 04', type: ss, server: tjsedht.cfprefer1.xyz, port: 10039, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇺🇸 United States 05', type: ss, server: tjsedht.cfprefer1.xyz, port: 10040, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇺🇸 United States 06', type: ss, server: tjsedht.cfprefer1.xyz, port: 10041, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇺🇸 United States 07', type: ss, server: tjsedht.cfprefer1.xyz, port: 10042, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇺🇸 United States 08', type: ss, server: tjsedht.cfprefer1.xyz, port: 10043, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇬🇧 United Kingdom 01', type: ss, server: tjsedht.cfprefer1.xyz, port: 10013, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇬🇧 United Kingdom 02', type: ss, server: tjsedht.cfprefer1.xyz, port: 10014, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇭🇰 Hong Kong | 家宽 3.0x', type: ss, server: tjsedht.cfprefer1.xyz, port: 10065, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇨🇳 Taiwan | 家宽 3.0x', type: ss, server: tjsedht.cfprefer1.xyz, port: 10051, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇺🇸 United States | 家宽 3.0x', type: ss, server: tjsedht.cfprefer1.xyz, port: 10049, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇬🇧 United Kingdom | 家宽 3.0x', type: ss, server: tjsedht.cfprefer1.xyz, port: 10069, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇰🇷 South Korea | 家宽 3.0x', type: ss, server: tjsedht.cfprefer1.xyz, port: 10053, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇳🇿 New Zealand | 家宽 3.0x', type: ss, server: tjsedht.cfprefer1.xyz, port: 10056, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇵🇰 Pakistan | 家宽 3.0x', type: ss, server: tjsedht.cfprefer1.xyz, port: 10059, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇨🇭 Switzerland | 家宽 3.0x', type: ss, server: tjsedht.cfprefer1.xyz, port: 10060, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇲🇴 Macao | 冷门', type: ss, server: tjsedht.cfprefer1.xyz, port: 10071, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇲🇾 Malaysia | 冷门', type: ss, server: tjsedht.cfprefer1.xyz, port: 10073, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇹🇷 Turkey | 冷门', type: ss, server: tjsedht.cfprefer1.xyz, port: 10005, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇦🇷 Argentina | 冷门', type: ss, server: tjsedht.cfprefer1.xyz, port: 10006, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇰🇵 North Korea | 冷门', type: ss, server: tjsedht.cfprefer1.xyz, port: 10029, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇦🇶 Antarctica | 冷门', type: ss, server: tjsedht.cfprefer1.xyz, port: 10030, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇮🇸 Iceland | 冷门', type: ss, server: tjsedht.cfprefer1.xyz, port: 10031, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇳🇬 Nigeria | 冷门', type: ss, server: tjsedht.cfprefer1.xyz, port: 10037, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+    - { name: '🇺🇸 US-Emby专用 0.01x', type: ss, server: dtjaswffgyjh.cfprefer1.xyz, port: 39808, cipher: aes-256-gcm, password: ac81d21d-5ad0-4646-9743-b42ee5263b8b, udp: true }
+
 proxy-groups:
   - name: Proxies
     type: select
@@ -298,95 +237,63 @@ proxy-groups:
       - SG
       - TW
       - US
-      - "Traffic: 2.92 GB | 20 GB"
-      - "Expire: 2024-09-24"
-      - 🇭🇰 香港实验性 IEPL 中继 1
-      - 🇯🇵 日本实验性 IEPL 中继 1
-      - 🇸🇬 新加坡实验性 IEPL 中继 1
-      - 🇺🇸 美国实验性 IEPL 中继 1
-      - 🇭🇰 香港高级 IEPL 中继 1
-      - 🇭🇰 香港高级 IEPL 中继 2
-      - 🇭🇰 香港高级 IEPL 中继 3
-      - 🇯🇵 日本高级 IEPL 中继 1
-      - 🇯🇵 日本高级 IEPL 中继 2
-      - 🇯🇵 日本高级 IEPL 中继 3
-      - 🇸🇬 新加坡高级 IEPL 中继 1
-      - 🇸🇬 新加坡高级 IEPL 中继 2
-      - 🇸🇬 新加坡高级 IEPL 中继 3
-      - 🇨🇳 台湾高级 IEPL 中继 1
-      - 🇨🇳 台湾高级 IEPL 中继 2
-      - 🇨🇳 台湾高级 IEPL 中继 3
-      - 🇺🇸 美国高级 IEPL 中继 1
-      - 🇺🇸 美国高级 IEPL 中继 2
-      - 🇺🇸 美国高级 IEPL 中继 3
-      - 🇭🇰 香港标准 IEPL 中继 1
-      - 🇭🇰 香港标准 IEPL 中继 2
-      - 🇭🇰 香港标准 IEPL 中继 3
-      - 🇭🇰 香港标准 IEPL 中继 4
-      - 🇭🇰 香港标准 IEPL 中继 5
-      - 🇭🇰 香港标准 IEPL 中继 6
-      - 🇭🇰 香港标准 IEPL 中继 7
-      - 🇭🇰 香港标准 IEPL 中继 8
-      - 🇯🇵 日本标准 IEPL 中继 1
-      - 🇯🇵 日本标准 IEPL 中继 2
-      - 🇯🇵 日本标准 IEPL 中继 3
-      - 🇯🇵 日本标准 IEPL 中继 4
-      - 🇯🇵 日本标准 IEPL 中继 5
-      - 🇯🇵 日本标准 IEPL 中继 6
-      - 🇯🇵 日本标准 IEPL 中继 7
-      - 🇯🇵 日本标准 IEPL 中继 8
-      - 🇸🇬 新加坡标准 IEPL 中继 1
-      - 🇸🇬 新加坡标准 IEPL 中继 2
-      - 🇸🇬 新加坡标准 IEPL 中继 3
-      - 🇸🇬 新加坡标准 IEPL 中继 4
-      - 🇸🇬 新加坡标准 IEPL 中继 5
-      - 🇸🇬 新加坡标准 IEPL 中继 6
-      - 🇸🇬 新加坡标准 IEPL 中继 7
-      - 🇸🇬 新加坡标准 IEPL 中继 8
-      - 🇨🇳 台湾标准 IEPL 中继 1
-      - 🇨🇳 台湾标准 IEPL 中继 2
-      - 🇨🇳 台湾标准 IEPL 中继 3
-      - 🇺🇸 美国标准 IEPL 中继 1
-      - 🇺🇸 美国标准 IEPL 中继 2
-      - 🇺🇸 美国标准 IEPL 中继 3
-      - 🇺🇸 美国标准 IEPL 中继 4
-      - 🇺🇸 美国标准 IEPL 中继 5
-      - 🇺🇸 美国标准 IEPL 中继 6
-      - 🇺🇸 美国标准 IEPL 中继 7
-      - 🇺🇸 美国标准 IEPL 中继 8
-      - 🇲🇩 摩尔多瓦标准 IEPL 中继 1
-      - 🇺🇦 乌克兰标准 IEPL 中继 1
-      - 🇮🇹 意大利标准 IEPL 中继 1
-      - 🇭🇺 匈牙利标准 IEPL 中继 1
-      - 🇪🇸 西班牙标准 IEPL 中继 1
-      - 🇹🇷 土耳其标准 IEPL 中继 1
-      - 🇩🇪 德国标准 IEPL 中继 1
-      - 🇩🇪 德国标准 IEPL 中继 2
-      - 🇬🇧 英国标准 IEPL 中继 1
-      - 🇬🇧 英国标准 IEPL 中继 2
-      - 🇳🇱 荷兰标准 IEPL 中继 1
-      - 🇳🇱 荷兰标准 IEPL 中继 2
-      - 🇫🇷 法国标准 IEPL 中继 1
-      - 🇫🇷 法国标准 IEPL 中继 2
-      - 🇨🇦 加拿大标准 IEPL 中继 1
-      - 🇨🇦 加拿大标准 IEPL 中继 2
-      - 🇦🇷 阿根廷标准 IEPL 中继 1
-      - 🇧🇷 巴西标准 IEPL 中继 1
-      - 🇨🇱 智利标准 IEPL 中继 1
-      - 🇦🇺 澳大利亚标准 IEPL 中继 1
-      - 🇳🇿 新西兰标准 IEPL 中继 1
-      - 🇰🇷 韩国标准 IEPL 中继 1
-      - 🇰🇷 韩国标准 IEPL 中继 2
-      - 🇮🇩 印尼标准 IEPL 中继 1
-      - 🇹🇭 泰国标准 IEPL 中继 1
-      - 🇻🇳 越南标准 IEPL 中继 1
-      - 🇮🇳 印度标准 IEPL 中继 1
-      - 🇵🇰 巴基斯坦标准 IEPL 中继 1
-      - 🇮🇱 以色列标准 IEPL 中继 1
-      - 🇦🇪 阿联酋标准 IEPL 中继 1
-      - 🇵🇭 菲律宾标准 IEPL 中继 1
-      - 🇲🇾 马来西亚标准 IEPL 中继 1
-      - 🇪🇬 埃及标准 IEPL 中继 1
+      - "剩余流量：182.35 GB"
+      - "套餐到期：2024-06-07"
+      - 🇭🇰 Hong Kong | 日用 0.2x
+      - 🇯🇵 Japan | 日用 0.2x
+      - 🇸🇬 Singapore | 日用 0.2x
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong | 家宽 3.0x
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇯🇵 Japan 06
+      - 🇯🇵 Japan 07
+      - 🇯🇵 Japan 08
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇸🇬 Singapore 06
+      - 🇸🇬 Singapore 07
+      - 🇸🇬 Singapore 08
+      - 🇸🇬 Singapore | 劫持
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan | 家宽 3.0x
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇺🇸 United States 06
+      - 🇺🇸 United States 07
+      - 🇺🇸 United States 08
+      - 🇺🇸 United States | 家宽 3.0x
+      - 🇬🇧 United Kingdom 01
+      - 🇬🇧 United Kingdom 02
+      - 🇬🇧 United Kingdom | 家宽 3.0x
+      - 🇰🇷 South Korea | 家宽 3.0x
+      - 🇳🇿 New Zealand | 家宽 3.0x
+      - 🇵🇰 Pakistan | 家宽 3.0x
+      - 🇨🇭 Switzerland | 家宽 3.0x
+      - 🇲🇾 Malaysia | 冷门
+      - 🇲🇴 Macao | 冷门
+      - 🇹🇷 Turkey | 冷门
+      - 🇦🇷 Argentina | 冷门
+      - 🇰🇵 North Korea | 冷门
+      - 🇮🇸 Iceland | 冷门
+      - 🇦🇶 Antarctica | 冷门
+      - 🇳🇬 Nigeria | 冷门
+      - 🇺🇸 US-Emby专用 0.01x
   - name: YouTube
     type: select
     proxies:
@@ -511,72 +418,58 @@ proxy-groups:
   - name: HK
     type: select
     proxies:
-      - 🇭🇰 香港实验性 IEPL 中继 1
-      - 🇭🇰 香港高级 IEPL 中继 1
-      - 🇭🇰 香港高级 IEPL 中继 2
-      - 🇭🇰 香港高级 IEPL 中继 3
-      - 🇭🇰 香港标准 IEPL 中继 1
-      - 🇭🇰 香港标准 IEPL 中继 2
-      - 🇭🇰 香港标准 IEPL 中继 3
-      - 🇭🇰 香港标准 IEPL 中继 4
-      - 🇭🇰 香港标准 IEPL 中继 5
-      - 🇭🇰 香港标准 IEPL 中继 6
-      - 🇭🇰 香港标准 IEPL 中继 7
-      - 🇭🇰 香港标准 IEPL 中继 8
+      - 🇭🇰 Hong Kong | 日用 0.2x
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong | 家宽 3.0x
   - name: JP
     type: select
     proxies:
-      - 🇯🇵 日本实验性 IEPL 中继 1
-      - 🇯🇵 日本高级 IEPL 中继 1
-      - 🇯🇵 日本高级 IEPL 中继 2
-      - 🇯🇵 日本高级 IEPL 中继 3
-      - 🇯🇵 日本标准 IEPL 中继 1
-      - 🇯🇵 日本标准 IEPL 中继 2
-      - 🇯🇵 日本标准 IEPL 中继 3
-      - 🇯🇵 日本标准 IEPL 中继 4
-      - 🇯🇵 日本标准 IEPL 中继 5
-      - 🇯🇵 日本标准 IEPL 中继 6
-      - 🇯🇵 日本标准 IEPL 中继 7
-      - 🇯🇵 日本标准 IEPL 中继 8
+      - 🇯🇵 Japan | 日用 0.2x
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇯🇵 Japan 06
+      - 🇯🇵 Japan 07
+      - 🇯🇵 Japan 08
   - name: SG
     type: select
     proxies:
-      - 🇸🇬 新加坡实验性 IEPL 中继 1
-      - 🇸🇬 新加坡高级 IEPL 中继 1
-      - 🇸🇬 新加坡高级 IEPL 中继 2
-      - 🇸🇬 新加坡高级 IEPL 中继 3
-      - 🇸🇬 新加坡标准 IEPL 中继 1
-      - 🇸🇬 新加坡标准 IEPL 中继 2
-      - 🇸🇬 新加坡标准 IEPL 中继 3
-      - 🇸🇬 新加坡标准 IEPL 中继 4
-      - 🇸🇬 新加坡标准 IEPL 中继 5
-      - 🇸🇬 新加坡标准 IEPL 中继 6
-      - 🇸🇬 新加坡标准 IEPL 中继 7
-      - 🇸🇬 新加坡标准 IEPL 中继 8
+      - 🇸🇬 Singapore | 日用 0.2x
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇸🇬 Singapore 06
+      - 🇸🇬 Singapore 07
+      - 🇸🇬 Singapore 08
+      - 🇸🇬 Singapore | 劫持
+- name: US
+    type: select
+    proxies:
+      - 🇺🇸 United States | 日用 0.2x
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇺🇸 United States 06
+      - 🇺🇸 United States 07
+      - 🇺🇸 United States 08
+      - 🇺🇸 United States | 家宽 3.0x
   - name: TW
     type: select
     proxies:
-      - 🇨🇳 台湾高级 IEPL 中继 1
-      - 🇨🇳 台湾高级 IEPL 中继 2
-      - 🇨🇳 台湾高级 IEPL 中继 3
-      - 🇨🇳 台湾标准 IEPL 中继 1
-      - 🇨🇳 台湾标准 IEPL 中继 2
-      - 🇨🇳 台湾标准 IEPL 中继 3
-  - name: US
-    type: select
-    proxies:
-      - 🇺🇸 美国实验性 IEPL 中继 1
-      - 🇺🇸 美国高级 IEPL 中继 1
-      - 🇺🇸 美国高级 IEPL 中继 2
-      - 🇺🇸 美国高级 IEPL 中继 3
-      - 🇺🇸 美国标准 IEPL 中继 1
-      - 🇺🇸 美国标准 IEPL 中继 2
-      - 🇺🇸 美国标准 IEPL 中继 3
-      - 🇺🇸 美国标准 IEPL 中继 4
-      - 🇺🇸 美国标准 IEPL 中继 5
-      - 🇺🇸 美国标准 IEPL 中继 6
-      - 🇺🇸 美国标准 IEPL 中继 7
-      - 🇺🇸 美国标准 IEPL 中继 8
+      - 🇨🇳 Taiwan 01
+      - 🇨🇳 Taiwan | 家宽 3.0x  
 rules:
  - DOMAIN,app.adjust.com,DIRECT
  - DOMAIN,app.appsflyer.com,DIRECT
