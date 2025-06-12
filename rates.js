@@ -6,6 +6,10 @@
  * 1. 设置基准货币，默认人民币(CNY)。
  * 2. 设置保留几位小数。
  * @update ：YangZhaocool 
+
+ [task_local]
+ 30 8 * * * https://raw.githubusercontent.com/xioazeng/zhuo/master/rates.js
+ 
  */
 
 const base = "CNY"; // 基准货币，可以改成其他币种
