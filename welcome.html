@@ -1,0 +1,57 @@
+<!-- 🌏 NodeSeek访客欢迎模块 -->
+<div id="visitor-welcome" style="
+  font-size:14px;
+  line-height:1.8;
+  text-align:center;
+  margin-top:10px;
+  color:var(--text-color,#555);
+  background:var(--bg-color,rgba(0,0,0,0.03));
+  border-radius:6px;
+  padding:10px 12px;
+  display:inline-block;
+  max-width:95%;
+  box-shadow:0 1px 3px rgba(0,0,0,0.08);
+"></div>
+
+<script>
+(async () => {
+  try {
+    // 获取IP与地理位置
+    const ipInfo = await fetch('https://ipapi.co/json/').then(r => r.json());
+    const ip = ipInfo.ip || '未知IP';
+    const location = `${ipInfo.country_name || '未知国家'} ${ipInfo.city || ''}`;
+
+    // 解析系统与浏览器
+    const ua = navigator.userAgent;
+    const os =
+      /Windows/i.test(ua) ? 'Windows' :
+      /Mac OS/i.test(ua) ? 'macOS' :
+      /Android/i.test(ua) ? 'Android' :
+      /iPhone|iPad|iPod/i.test(ua) ? 'iPhone' :
+      /Linux/i.test(ua) ? 'Linux' : '未知系统';
+    const browser =
+      /Edg/i.test(ua) ? 'Edge' :
+      /Chrome/i.test(ua) ? 'Chrome' :
+      /Safari/i.test(ua) && !/Chrome/i.test(ua) ? 'Safari' :
+      /Firefox/i.test(ua) ? 'Firefox' :
+      /QQBrowser/i.test(ua) ? 'QQ浏览器' : '未知浏览器';
+
+    // 生成日期
+    const date = new Date();
+    const weekday = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+    const today = `${date.getFullYear()}年${date.getMonth()+1}月${date.getDate()}日 ${weekday[date.getDay()]}`;
+
+    // 输出内容
+    const html = `
+      🌏 欢迎您来自 <b>${location}</b> 的朋友<br>
+      📅 今天是 <b>${today}</b><br>
+      💻 您的IP是：<code>${ip}</code><br>
+      📱 您使用的是 <b>${os}</b> 操作系统<br>
+      🌐 您使用的是 <b>${browser}</b> 浏览器
+    `;
+    document.getElementById('visitor-welcome').innerHTML = html;
+  } catch (e) {
+    console.error('访客欢迎信息加载失败：', e);
+  }
+})();
+</script>
