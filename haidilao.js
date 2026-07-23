@@ -20,28 +20,27 @@
  * Cookie 过期后重新打开一次签到页面刷新即可。
  *
    --- QuantumultX (rewrite_local) ---
-   ^https:\/\/superapp-public\.kiwa-tech\.com\/activity\/wxapp\/signin\/(query|signin) url script-request-header https://raw.githubusercontent.com/xxx/haidilao_sign.js
+   ^https:\/\/superapp-public\.kiwa-tech\.com\/activity\/wxapp\/signin\/(query|signin) url script-request-header haidilao.js
    [mitm]
    hostname = superapp-public.kiwa-tech.com
 
    --- Loon (插件 [Script]) ---
-   http-request ^https:\/\/superapp-public\.kiwa-tech\.com\/activity\/wxapp\/signin\/(query|signin) script-path=haidilao_sign.js, requires-body=false, timeout=15, tag=海底捞抓取Cookie
+   http-request ^https:\/\/superapp-public\.kiwa-tech\.com\/activity\/wxapp\/signin\/(query|signin) script-path=haidilao.js, requires-body=false, timeout=15, tag=海底捞抓取Cookie
    [MITM]
    hostname = superapp-public.kiwa-tech.com
 
    --- Surge (模块 [Script]) ---
-   http-request ^https?:\/\/superapp-public\.kiwa-tech\.com\/activity\/wxapp\/signin\/(query|signin) script-path=haidilao_sign.js, requires-body=false, timeout=15
+   http-request ^https?:\/\/superapp-public\.kiwa-tech\.com\/activity\/wxapp\/signin\/(query|signin) script-path=haidilao.js, requires-body=false, timeout=15
    [MITM]
    hostname = %APPEND% superapp-public.kiwa-tech.com
 
    --- Egern (模块 [Script]，写法与 Surge 基本一致) ---
-   http-request ^https?:\/\/superapp-public\.kiwa-tech\.com\/activity\/wxapp\/signin\/(query|signin) script-path=haidilao_sign.js, requires-body=false
+   http-request ^https?:\/\/superapp-public\.kiwa-tech\.com\/activity\/wxapp\/signin\/(query|signin) script-path=haidilao.js, requires-body=false
    [MITM]
    hostname = superapp-public.kiwa-tech.com
 
  * 【第二步：配置签到定时任务】
  * QX / Loon / Surge / Egern：单独建一条 cron 任务/定时脚本，脚本路径同上，
- * 不挂在 MitM 规则里、直接由定时器触发即可（脚本会自动识别出不在 $request
  * 环境下运行，从而进入"批量签到"模式）。建议 08:30 左右执行。
  *
  * 青龙面板：
