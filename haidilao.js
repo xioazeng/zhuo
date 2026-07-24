@@ -44,7 +44,7 @@
  * 环境下运行，从而进入"批量签到"模式）。建议 08:30 左右执行。
  *
  * 青龙面板：
- *   1. 把本文件放到 /ql/data/scripts/haidilao_sign.js
+ *   1. 把本文件放到 /ql/data/scripts/haidilao.js
  *   2. 保证同目录下已有 sendNotify.js（青龙自带）
  *   3. 环境变量 HDL_COOKIE，多账号用 & 或换行分隔，单账号格式：
  *        token@cookie@备注
@@ -52,7 +52,7 @@
  *        TOKEN_APP_xxxx@tfstk=xxx;acw_tc=xxx@13500000000
  *        TOKEN_APP_yyyy@@13300000000
  *   4. 定时规则建议：30 8 * * *
- *      新建任务：task haidilao_sign.js
+ *      新建任务：task haidilao.js
  *
  * ============================== BoxJS 数据管理 ==============================
  * 存储 key：hdl_cookie （JSON 数组，字段：token / cookie / ua / remark / updateTime）
@@ -83,17 +83,16 @@ const isNode = typeof require === 'function' && !isQuanX && !isLoon && !isSurge 
 const isRequestScope = typeof $request !== 'undefined'
 
 var _axios = null
-
 const DEBUG_LOG = false
 function logDebug() {
   if (!DEBUG_LOG) return
   const args = Array.prototype.slice.call(arguments)
-  console.log('[haidilao_sign][DEBUG]', ...args)
+  console.log('[海底捞签到][DEBUG]', ...args)
 }
 
 function logInfo() {
   const args = Array.prototype.slice.call(arguments)
-  console.log('[haidilao_sign]', ...args)
+  console.log('[海底捞签到]', ...args)
 }
 
 // ==================== 入口 ====================
@@ -114,13 +113,13 @@ function logInfo() {
     }
     logInfo(`脚本执行完毕，耗时 ${((Date.now() - startTime) / 1000).toFixed(1)} 秒`)
   } catch (e) {
-    console.log('[haidilao_sign] 顶层异常：' + (e && e.message ? e.message : e))
-    if (e && e.stack) console.log('[haidilao_sign] 堆栈：\n' + e.stack)
+    console.log('[海底捞签到] 顶层异常：' + (e && e.message ? e.message : e))
+    if (e && e.stack) console.log('[海底捞签到] 堆栈：\n' + e.stack)
     safeDone({})
   }
 })()
 
-// ==================== 抓取 Cookie 模式 ====================
+// ==================== 抓取 Cookie 模式（QX/Loon/Surge/Egern，request 阶段）====================
 async function captureMain() {
   const headers = $request.headers || {}
   const token = pickHeader(headers, '_HAIDILAO_APP_TOKEN')
@@ -151,7 +150,7 @@ async function captureMain() {
   logInfo(`当前共 ${list.length} 个账号已存入 BoxJS(${BOX_KEY})`)
 
   notify(
-    '🔔 海底捞小程序',
+    '🔔 海底捞小程序签到',
     'Cookie获取成功',
     `账号：${maskAccount(account)}`
   )
@@ -159,7 +158,7 @@ async function captureMain() {
   safeDone({})
 }
 
-// ==================== 定时批量签到模式 ====================
+// ==================== 定时批量签到模式（QX/Loon/Surge/Egern，非 request 阶段）====================
 async function proxyCronMain() {
   const list = readAccounts()
   if (!list.length) {
@@ -242,8 +241,36 @@ function parseNodeAccounts(raw) {
     .filter(a => a.token)
 }
 
-// ==================== 核心签到逻辑（跨平台通用） ====================
-// httpFn(method, path, body, account) => Promise<Object>  解析后的 JSON
+async function claimAvailableTasks(httpFn, account, index) {
+  try {
+    logDebug(`[账号${index}] 查询任务列表 member/task/list`)
+    const taskList = await callApi(httpFn, account, 'POST', '/activity/wxapp/member/task/list', {})
+    if (!Array.isArray(taskList) || !taskList.length) return []
+
+    const pending = taskList.filter(t => t.receiveStatus === 0)
+    if (!pending.length) {
+      logDebug(`[账号${index}] 没有待领取的任务`)
+      return []
+    }
+
+    const result = []
+    for (const task of pending) {
+      try {
+        logDebug(`[账号${index}] 领取任务 taskId=${task.taskId}（${task.title}）`)
+        await callApi(httpFn, account, 'POST', '/activity/wxapp/member/task/draw', { taskId: task.taskId })
+        result.push(`✅${task.title}`)
+      } catch (e) {
+        result.push(`❌${task.title}：${e.message}`)
+      }
+      await sleep(800)
+    }
+    return result
+  } catch (e) {
+    logDebug(`[账号${index}] 任务领取流程异常：`, e.message)
+    return []
+  }
+}
+
 async function signInOneAccount(account, index, httpFn) {
   const label = maskAccount(account)
   try {
@@ -318,13 +345,20 @@ async function signInOneAccount(account, index, httpFn) {
     if (expireLine) {
       lines.push('')
       lines.push(expireLine)
-      lines.push('')
     }
+
+    const taskLines = await claimAvailableTasks(httpFn, account, index)
+    if (taskLines.length) {
+      lines.push('')
+      lines.push('📋任务领取')
+      lines.push(...taskLines)
+    }
+    lines.push('')
 
     return lines.join('\n')
   } catch (e) {
-    console.log(`[haidilao_sign][账号${index}] 异常：` + (e && e.message ? e.message : e))
-    if (e && e.stack) console.log(`[haidilao_sign][账号${index}] 堆栈：\n` + e.stack)
+    console.log(`[海底捞签到][账号${index}] 异常：` + (e && e.message ? e.message : e))
+    if (e && e.stack) console.log(`[海底捞签到][账号${index}] 堆栈：\n` + e.stack)
     return `账号${index}：【${label}】\n❌签到失败：${e && e.message ? e.message : e}`
   }
 }
@@ -428,7 +462,7 @@ function maskAccount(account) {
   return token.slice(0, 6) + '...' + token.slice(-4)
 }
 
-// ==================== HTTP 请求 ====================
+// ==================== HTTP 请求：QX/Loon/Surge/Egern（代理端签到用）====================
 function buildHeaders(account) {
   return {
     'Content-Type': 'application/json',
@@ -502,7 +536,7 @@ function httpRequestNode(method, path, body, account) {
     })
     .catch(e => {
       const detail = e.response ? `HTTP ${e.response.status}：${JSON.stringify(e.response.data).slice(0, 200)}` : e.message
-      console.log(`[haidilao_sign] 请求失败 ${path}：${detail}`)
+      console.log(`[海底捞签到] 请求失败 ${path}：${detail}`)
       throw new Error(`请求 ${path} 失败：${detail}`)
     })
 }
@@ -548,7 +582,7 @@ function notify(title, subtitle, content) {
       console.log(`${title}\n${subtitle}\n${content}`)
     }
   } catch (e) {
-    console.log('[haidilao_sign] 通知发送失败：' + e)
+    console.log('[海底捞签到] 通知发送失败：' + e)
   }
 }
 
@@ -568,6 +602,6 @@ function safeDone(obj) {
   try {
     if (typeof $done !== 'undefined') $done(obj || {})
   } catch (e) {
-    console.log('[haidilao_sign] $done 调用异常：' + e)
+    console.log('[海底捞签到] $done 调用异常：' + e)
   }
 }
