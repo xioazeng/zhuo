@@ -151,9 +151,9 @@ async function captureMain() {
   logInfo(`当前共 ${list.length} 个账号已存入 BoxJS(${BOX_KEY})`)
 
   notify(
-    '🔔 海底捞小程序签到',
+    '🔔 海底捞小程序',
     'Cookie获取成功',
-    `账号：${maskAccount(account)}\n已写入 BoxJS(${BOX_KEY})，共 ${list.length} 个账号`
+    `账号：${maskAccount(account)}`
   )
 
   safeDone({})
